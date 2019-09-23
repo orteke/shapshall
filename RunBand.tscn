@@ -1,11 +1,11 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
-[ext_resource path="res://animations/run/run-1.png" type="Texture" id=2]
-[ext_resource path="res://animations/run/run-2.png" type="Texture" id=3]
-[ext_resource path="res://animations/run/run-3.png" type="Texture" id=4]
-[ext_resource path="res://animations/run/run-4.png" type="Texture" id=5]
-[ext_resource path="res://animations/run/run-5.png" type="Texture" id=6]
+[ext_resource path="res://animations/run/shapshall_walking-1.png" type="Texture" id=2]
+[ext_resource path="res://animations/run/shapshall_walking-2.png" type="Texture" id=3]
+[ext_resource path="res://animations/run/shapshall_walking-3.png" type="Texture" id=4]
+[ext_resource path="res://animations/run/shapshall_walking-4.png" type="Texture" id=5]
+[ext_resource path="res://animations/run/shapshall_walking-5.png" type="Texture" id=6]
 [ext_resource path="res://animations/left/shapshall_run_left-1.png" type="Texture" id=7]
 [ext_resource path="res://animations/left/shapshall_run_left-2.png" type="Texture" id=8]
 [ext_resource path="res://animations/left/shapshall_run_left-3.png" type="Texture" id=9]
@@ -16,15 +16,21 @@
 [ext_resource path="res://animations/right/shapshall_run_right-3.png" type="Texture" id=14]
 [ext_resource path="res://animations/right/shapshall_run_right-4.png" type="Texture" id=15]
 [ext_resource path="res://animations/right/shapshall_run_right-5.png" type="Texture" id=16]
-[ext_resource path="res://animations/skip/skip-1.png" type="Texture" id=17]
-[ext_resource path="res://animations/skip/skip-2.png" type="Texture" id=18]
-[ext_resource path="res://animations/skip/skip-3.png" type="Texture" id=19]
-[ext_resource path="res://animations/skip/skip-4.png" type="Texture" id=20]
-[ext_resource path="res://animations/skip/skip-5.png" type="Texture" id=21]
-[ext_resource path="res://animations/skip/skip-6.png" type="Texture" id=22]
-[ext_resource path="res://animations/skip/skip-7.png" type="Texture" id=23]
-[ext_resource path="res://animations/skip/skip-8.png" type="Texture" id=24]
+[ext_resource path="res://animations/skip/shapshall-skip-1.png" type="Texture" id=17]
+[ext_resource path="res://animations/skip/shapshall-skip-2.png" type="Texture" id=18]
+[ext_resource path="res://animations/skip/shapshall-skip-3.png" type="Texture" id=19]
+[ext_resource path="res://animations/skip/shapshall-skip-4.png" type="Texture" id=20]
+[ext_resource path="res://animations/skip/shapshall-skip-5.png" type="Texture" id=21]
+[ext_resource path="res://animations/skip/shapshall-skip-6.png" type="Texture" id=22]
+[ext_resource path="res://animations/skip/shapshall-skip-7.png" type="Texture" id=23]
+[ext_resource path="res://animations/skip/shapshall-skip-8.png" type="Texture" id=24]
 [ext_resource path="res://sprites/ground.png" type="Texture" id=25]
+[ext_resource path="res://animations/womans/womans-1.png" type="Texture" id=26]
+[ext_resource path="res://animations/womans/womans-2.png" type="Texture" id=27]
+[ext_resource path="res://animations/womans/womans-3.png" type="Texture" id=28]
+[ext_resource path="res://animations/womans/womans-4.png" type="Texture" id=29]
+[ext_resource path="res://animations/womans/womans-5.png" type="Texture" id=30]
+[ext_resource path="res://animations/womans/womans-6.png" type="Texture" id=31]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -35,8 +41,8 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 2.9607
-height = 46.6687
+radius = 1.39126
+height = 25.1151
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
@@ -47,8 +53,8 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=4]
-radius = 419.859
-height = 213.378
+radius = 265.972
+height = 87.1772
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
@@ -59,8 +65,8 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=6]
-radius = 2.99644
-height = 46.1572
+radius = 3.13219
+height = 20.6774
 
 [sub_resource type="SpriteFrames" id=7]
 animations = [ {
@@ -71,11 +77,22 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=8]
-radius = 6.66478
-height = 5.63055
+radius = 3.4113
+height = 5.21931
 
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 64.0843, 65.3352 )
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "default",
+"speed": 60.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 2.42668, 21.5578 )
 
 [node name="RunBand" type="Node2D"]
 position = Vector2( 59.0344, 54.9276 )
@@ -88,39 +105,41 @@ script = ExtResource( 1 )
 
 [node name="WalkingAnimatedSprite" type="AnimatedSprite" parent="Player"]
 visible = false
-position = Vector2( 5.40024, 18.1779 )
-scale = Vector2( 0.00724515, 0.0443897 )
+position = Vector2( 4.71796, 30.2595 )
+scale = Vector2( 0.0197843, 0.11347 )
 frames = SubResource( 1 )
 animation = "walking"
-frame = 2
+frame = 1
 speed_scale = 0.2
 playing = true
 
 [node name="WalkingCollisionShape2D" type="CollisionShape2D" parent="Player"]
 visible = false
-position = Vector2( 4.3232, 19.9056 )
+position = Vector2( 3.71537, 35.5066 )
 rotation = -0.000654697
 scale = Vector2( 1.00126, 1.23292 )
 shape = SubResource( 2 )
 
 [node name="LeftAnimatedSprite" type="AnimatedSprite" parent="Player"]
-position = Vector2( 4.94092, 25.4163 )
-scale = Vector2( 0.00798813, 0.0484504 )
+visible = false
+position = Vector2( 3.38589, 34.8813 )
+scale = Vector2( 0.0178295, 0.0895091 )
 frames = SubResource( 3 )
 animation = "left"
-frame = 2
+frame = 3
 speed_scale = 0.2
 playing = true
 
 [node name="LeftCollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2( 4.58228, 27.4387 )
+visible = false
+position = Vector2( 2.77734, 39.2467 )
 scale = Vector2( 0.00798813, 0.0484504 )
 shape = SubResource( 4 )
 
 [node name="RightAnimatedSprite" type="AnimatedSprite" parent="Player"]
 visible = false
-position = Vector2( 6.90527, 17.0038 )
-scale = Vector2( 0.00735843, 0.0472681 )
+position = Vector2( 4.83289, 36.4042 )
+scale = Vector2( 0.0164003, 0.0843067 )
 frames = SubResource( 5 )
 animation = "right"
 speed_scale = 0.2
@@ -128,23 +147,21 @@ playing = true
 
 [node name="RightCollisionShape2D" type="CollisionShape2D" parent="Player"]
 visible = false
-position = Vector2( 8.03624, 27.7432 )
+position = Vector2( 4.87291, 40.3292 )
 scale = Vector2( -0.62263, 0.983541 )
 shape = SubResource( 6 )
 
 [node name="SkipAnimatedSprite" type="AnimatedSprite" parent="Player"]
-visible = false
-position = Vector2( 5.41174, 9.76807 )
-scale = Vector2( 0.00726189, 0.0461418 )
+position = Vector2( 3.23646, 34.1004 )
+scale = Vector2( 0.0184609, 0.109711 )
 frames = SubResource( 7 )
 animation = "skip"
-frame = 1
+frame = 4
 speed_scale = 0.2
 playing = true
 
 [node name="SkipCollisionShape2D" type="CollisionShape2D" parent="Player"]
-visible = false
-position = Vector2( 5.17245, 21.294 )
+position = Vector2( 3.02362, 34.8029 )
 scale = Vector2( -0.352837, 2.73951 )
 shape = SubResource( 8 )
 
@@ -175,3 +192,17 @@ position = Vector2( 7.07079, 7.71576 )
 shape = SubResource( 9 )
 
 [node name="Node2D" type="Node2D" parent="."]
+
+[node name="womans" type="KinematicBody2D" parent="."]
+
+[node name="WomansAnimatedSprite" type="AnimatedSprite" parent="womans"]
+position = Vector2( -5.02255, 81.4114 )
+scale = Vector2( 0.0284764, 0.153867 )
+frames = SubResource( 10 )
+frame = 5
+speed_scale = 0.2
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="womans"]
+position = Vector2( -6.33592, 77.6596 )
+shape = SubResource( 11 )
