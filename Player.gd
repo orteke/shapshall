@@ -7,8 +7,6 @@ const GRAVITY = 5
 const SKIP_POWER = -120
 const FLOOR = Vector2(0, -1)
 
-const AIRPARTICULES = preload("res://AirParticules.tscn")
-
 var time = 0
 var time_mult = 1.0
 
@@ -28,11 +26,6 @@ func _physics_process(delta):
 	
 	if !is_on_floor() and velocity.y < -0.2:
 		skip()
-	
-	if Input.is_action_just_pressed("ui_focus_next"):
-		var air_particules = AIRPARTICULES.instance()
-		get_parent().add_child(air_particules)
-		#air_particules.position = $Position2D.global_position
 	
 	velocity.y += GRAVITY
 	velocity = move_and_slide(velocity, FLOOR)
