@@ -67,8 +67,9 @@ animations = [ {
 "speed": 40.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 13.9709, 5.78989 )
+[sub_resource type="CapsuleShape2D" id=8]
+radius = 4.65584
+height = 1.29746
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( -0.00461864, -0.0327921 )
@@ -80,7 +81,7 @@ position = Vector2( 3.97688, -5.22898 )
 scale = Vector2( 0.0943962, 0.11347 )
 frames = SubResource( 1 )
 animation = "walking"
-frame = 3
+frame = 4
 speed_scale = 0.2
 playing = true
 
@@ -96,6 +97,7 @@ position = Vector2( -1.24697, -0.459475 )
 scale = Vector2( 0.0924121, 0.0895091 )
 frames = SubResource( 3 )
 animation = "left"
+frame = 1
 speed_scale = 0.2
 playing = true
 
@@ -111,7 +113,7 @@ position = Vector2( 5.74075, 1.43799 )
 scale = Vector2( 0.0767283, 0.078841 )
 frames = SubResource( 5 )
 animation = "right"
-frame = 2
+frame = 3
 speed_scale = 0.2
 playing = true
 
@@ -127,12 +129,11 @@ position = Vector2( 0.726448, -0.337166 )
 scale = Vector2( 0.0798893, 0.109711 )
 frames = SubResource( 7 )
 animation = "skip"
-frame = 1
 speed_scale = 0.2
 playing = true
 
 [node name="SkipCollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2( 0.226456, -0.236969 )
+position = Vector2( 0.671685, 0.631428 )
 scale = Vector2( -0.352837, 2.73951 )
 shape = SubResource( 8 )

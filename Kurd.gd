@@ -1,7 +1,7 @@
 extends Area2D
 
 const SPEED = 30
-const ROTATION_SPEED = 0.1
+
 const velocity = Vector2()
 
 # Called when the node enters the scene tree for the first time.
@@ -9,15 +9,11 @@ func _ready():
     pass
 
 func _physics_process(delta):
-	velocity.x = -(SPEED * delta)
+	velocity.y = SPEED * delta
 	translate(velocity)
-	
-	# rotate object
-	rotation = rotation + ROTATION_SPEED
-	
+
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 
-
-func _on_AirParticules_body_entered(body):
+func _on_kurd_body_entered(body):
 	queue_free()
