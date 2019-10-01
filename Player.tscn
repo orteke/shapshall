@@ -93,7 +93,7 @@ shape = SubResource( 2 )
 
 [node name="LeftAnimatedSprite" type="AnimatedSprite" parent="."]
 visible = false
-position = Vector2( -1.24697, -0.459475 )
+position = Vector2( 0.578187, -0.877299 )
 scale = Vector2( 0.0924121, 0.0895091 )
 frames = SubResource( 3 )
 animation = "left"
@@ -103,7 +103,7 @@ playing = true
 
 [node name="LeftCollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2( -3.20397, 4.16083 )
+position = Vector2( -1.37881, 3.74301 )
 scale = Vector2( 0.00798813, 0.0484504 )
 shape = SubResource( 4 )
 
@@ -120,7 +120,8 @@ playing = true
 [node name="RightCollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2( 4.74575, 4.92008 )
-scale = Vector2( -0.62263, 0.983541 )
+rotation = -3.14159
+scale = Vector2( 0.62263, -0.983541 )
 shape = SubResource( 6 )
 
 [node name="SkipAnimatedSprite" type="AnimatedSprite" parent="."]
@@ -129,11 +130,13 @@ position = Vector2( 0.726448, -0.337166 )
 scale = Vector2( 0.0798893, 0.109711 )
 frames = SubResource( 7 )
 animation = "skip"
+frame = 2
 speed_scale = 0.2
 playing = true
 
 [node name="SkipCollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2( 0.671685, 0.631428 )
-scale = Vector2( -0.352837, 2.73951 )
+rotation = -3.14159
+scale = Vector2( 0.352837, -2.73951 )
 shape = SubResource( 8 )

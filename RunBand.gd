@@ -8,6 +8,7 @@ const KURD = preload("res://Kurd.tscn")
 
 var rng = RandomNumberGenerator.new()
 var _timer = Timer.new()
+var particules = []
 
 func _ready():
 	add_child(_timer)
@@ -25,26 +26,32 @@ func _set_timer():
 	
 func _on_Timer_timeout():
 	var some_random = int(rng.randf_range(1, 6))
+	var particul = null
 	match some_random:
 		1:
-			var particul = SUGAR.instance()
-			get_parent().add_child(particul)
+			particul = SUGAR.instance()
 			particul.position = $Position2DHead.global_position
 		2:
-			var particul = SISHA.instance()
-			get_parent().add_child(particul)
+			particul = SISHA.instance()
 			particul.position = $Position2DHead.global_position
 		3:
-			var particul = STONE.instance()
-			get_parent().add_child(particul)
+			particul = STONE.instance()
 			particul.position = $Position2DGround.global_position
 		4:
-			var particul = SHIT.instance()
-			get_parent().add_child(particul)
+			particul = SHIT.instance()
 			particul.position = $Position2DGround.global_position
 		5:
-			var particul = KURD.instance()
-			get_parent().add_child(particul)
+			particul = KURD.instance()
 			particul.position = $Position2DAir.global_position
-		
+	
+	get_parent().add_child(particul)
+	particules.append(particul)
 	_set_timer()
+
+func _on_RunBand_tree_exited():
+	# clear all instances
+	for particul in particules:
+		if particul == null:
+			continue
+		particul.queue_free()
+	queue_free()
