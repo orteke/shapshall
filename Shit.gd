@@ -15,7 +15,6 @@ func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 
 func _on_shit_body_entered(body):
-	print(body.get_name())
 	queue_free()
 	if body.get_name() == "womans":
 		return

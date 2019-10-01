@@ -55,3 +55,14 @@ func _on_RunBand_tree_exited():
 			continue
 		particul.queue_free()
 	queue_free()
+
+func _on_WomansArea2D_body_entered(body):
+	if body.get_name() != "Player" || body.get_name() == "womans":
+		return
+		
+	queue_free()
+	var root = get_tree().get_root()
+	# Add the next level
+	var next_scene_resource = load("res://Kiss.tscn")
+	var next_scene = next_scene_resource.instance()
+	root.add_child(next_scene)

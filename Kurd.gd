@@ -17,7 +17,7 @@ func _on_VisibilityNotifier2D_screen_exited():
 
 func _on_kurd_body_entered(body):
 	queue_free()
-	if body.get_name() == "womans":
+	if body.get_name() == "womans" || body.get_name() == "StaticBody2D":
 		return
 	# remove main scene
 	var root = get_tree().get_root()

@@ -7,9 +7,6 @@ const GRAVITY = 5
 const SKIP_POWER = -120
 const FLOOR = Vector2(0, -1)
 
-var time = 0
-var time_mult = 1.0
-
 func _physics_process(delta):
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = SPEED

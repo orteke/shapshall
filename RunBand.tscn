@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://RunBand.gd" type="Script" id=1]
 [ext_resource path="res://sprites/ground.png" type="Texture" id=2]
@@ -23,6 +23,9 @@ animations = [ {
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 2.42668, 21.5578 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 2.71807, 20.3944 )
 
 [node name="RunBand" type="Node2D"]
 position = Vector2( 59.0344, 54.9276 )
@@ -60,11 +63,18 @@ position = Vector2( 37.1219, 98.5351 )
 position = Vector2( -5.02255, 81.4114 )
 scale = Vector2( 0.0284764, 0.153867 )
 frames = SubResource( 2 )
-frame = 2
+frame = 4
 speed_scale = 0.2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="womans"]
 position = Vector2( -6.33592, 77.6596 )
 shape = SubResource( 3 )
+
+[node name="WomansArea2D" type="Area2D" parent="womans"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="womans/WomansArea2D"]
+position = Vector2( -6.17959, 78.8912 )
+shape = SubResource( 4 )
 [connection signal="tree_exited" from="." to="." method="_on_RunBand_tree_exited"]
+[connection signal="body_entered" from="womans/WomansArea2D" to="." method="_on_WomansArea2D_body_entered"]
