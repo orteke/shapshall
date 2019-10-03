@@ -9,7 +9,8 @@ func _ready():
     pass
 
 func _physics_process(delta):
-	velocity.y = SPEED * delta
+	velocity.y = SPEED * delta * 2
+	velocity.x = -SPEED * delta
 	translate(velocity)
 
 func _on_VisibilityNotifier2D_screen_exited():

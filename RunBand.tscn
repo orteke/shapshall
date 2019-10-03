@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://RunBand.gd" type="Script" id=1]
 [ext_resource path="res://sprites/ground.png" type="Texture" id=2]
@@ -27,12 +27,16 @@ extents = Vector2( 2.42668, 21.5578 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 2.71807, 20.3944 )
 
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 0.527905, 4.38292 )
+
 [node name="RunBand" type="Node2D"]
 position = Vector2( 59.0344, 54.9276 )
 scale = Vector2( 7.00253, 1.26228 )
 script = ExtResource( 1 )
 
 [node name="Ground" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 14.4954, 109.029 )
 scale = Vector2( 0.358039, 0.155264 )
 texture = ExtResource( 2 )
@@ -54,10 +58,14 @@ position = Vector2( 37.0676, 65.3435 )
 [node name="Position2DAir" type="Position2D" parent="."]
 position = Vector2( 16.0175, -40.3575 )
 
+[node name="Position2DAir2" type="Position2D" parent="."]
+position = Vector2( 32.3824, -40.196 )
+
 [node name="Position2DGround" type="Position2D" parent="."]
 position = Vector2( 37.1219, 98.5351 )
 
 [node name="womans" type="KinematicBody2D" parent="."]
+editor/display_folded = true
 
 [node name="WomansAnimatedSprite" type="AnimatedSprite" parent="womans"]
 position = Vector2( -5.02255, 81.4114 )
@@ -72,10 +80,22 @@ position = Vector2( -6.33592, 77.6596 )
 shape = SubResource( 3 )
 
 [node name="WomansArea2D" type="Area2D" parent="womans"]
+editor/display_folded = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="womans/WomansArea2D"]
 position = Vector2( -6.17959, 78.8912 )
 shape = SubResource( 4 )
+
+[node name="FrontBlock" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 36.694, 82.3495 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FrontBlock"]
+position = Vector2( -0.291882, -0.462639 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FrontBlock/StaticBody2D"]
+position = Vector2( 0.250191, 0 )
+shape = SubResource( 5 )
 [connection signal="tree_exited" from="." to="." method="_on_RunBand_tree_exited"]
 [connection signal="tree_exiting" from="." to="." method="_on_RunBand_tree_exiting"]
 [connection signal="body_entered" from="womans/WomansArea2D" to="." method="_on_WomansArea2D_body_entered"]

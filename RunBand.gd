@@ -19,12 +19,12 @@ func _physics_process(delta):
 	pass
 	
 func _set_timer():
-	_timer.set_wait_time(rng.randf_range(1.5, 6))
+	_timer.set_wait_time(rng.randf_range(1.5, 4))
 	_timer.set_one_shot(true)
 	_timer.start()
 	
 func _on_Timer_timeout():
-	var some_random = int(rng.randf_range(1, 6))
+	var some_random = int(rng.randf_range(1, 7))
 	var particul = null
 	match some_random:
 		1:
@@ -42,6 +42,9 @@ func _on_Timer_timeout():
 		5:
 			particul = KURD.instance()
 			particul.position = $Position2DAir.global_position
+		6:
+			particul = KURD.instance()
+			particul.position = $Position2DAir2.global_position
 	
 	get_parent().add_child(particul)
 	_set_timer()
