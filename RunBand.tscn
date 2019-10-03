@@ -63,7 +63,7 @@ position = Vector2( 37.1219, 98.5351 )
 position = Vector2( -5.02255, 81.4114 )
 scale = Vector2( 0.0284764, 0.153867 )
 frames = SubResource( 2 )
-frame = 4
+frame = 5
 speed_scale = 0.2
 playing = true
 
@@ -77,4 +77,5 @@ shape = SubResource( 3 )
 position = Vector2( -6.17959, 78.8912 )
 shape = SubResource( 4 )
 [connection signal="tree_exited" from="." to="." method="_on_RunBand_tree_exited"]
+[connection signal="tree_exiting" from="." to="." method="_on_RunBand_tree_exiting"]
 [connection signal="body_entered" from="womans/WomansArea2D" to="." method="_on_WomansArea2D_body_entered"]

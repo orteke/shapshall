@@ -22,8 +22,8 @@ func _on_kurd_body_entered(body):
 	# remove main scene
 	var root = get_tree().get_root()
 	var scene = root.get_node("RunBand")
+	scene.queue_free()
 	root.remove_child(scene)
-	scene.free()
 	# Add the next level
 	var next_scene_resource = load("res://Fall.tscn")
 	var next_scene = next_scene_resource.instance()

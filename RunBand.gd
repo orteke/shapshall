@@ -8,7 +8,6 @@ const KURD = preload("res://Kurd.tscn")
 
 var rng = RandomNumberGenerator.new()
 var _timer = Timer.new()
-var particules = []
 
 func _ready():
 	add_child(_timer)
@@ -45,15 +44,16 @@ func _on_Timer_timeout():
 			particul.position = $Position2DAir.global_position
 	
 	get_parent().add_child(particul)
-	particules.append(particul)
 	_set_timer()
-
-func _on_RunBand_tree_exited():
-	# clear all instances
-	for particul in particules:
-		if particul == null:
+	
+func _on_RunBand_tree_exiting():
+	var root = get_tree().get_root()
+	for child in root.get_children():
+		if child.get_name() == "Node2D":
 			continue
-		particul.queue_free()
+		child.queue_free()
+
+func _on_RunBand_tree_exited():	
 	queue_free()
 
 func _on_WomansArea2D_body_entered(body):
