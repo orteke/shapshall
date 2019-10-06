@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="shapshall"
-run/main_scene="res://Idle.tscn"
+run/main_scene="res://SplashScreen.tscn"
 config/icon="res://icon.png"
 
 [display]
