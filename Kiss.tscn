@@ -20,9 +20,10 @@ animations = [ {
 } ]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2( 0.17482, 0 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 160.234, 192.928 )
+position = Vector2( 160.234, 194.501 )
 scale = Vector2( 2.50858, 0.225754 )
 texture = ExtResource( 1 )
 
@@ -36,6 +37,5 @@ shape = SubResource( 1 )
 position = Vector2( 25.5691, 154.267 )
 scale = Vector2( 0.18961, 0.171049 )
 frames = SubResource( 2 )
-frame = 2
 speed_scale = 0.2
 playing = true

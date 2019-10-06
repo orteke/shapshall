@@ -1,10 +1,20 @@
 extends Node2D
 
-const SUGAR = preload("res://Sugar.tscn")
-const SISHA = preload("res://Sisha.tscn")
-const STONE = preload("res://Stone.tscn")
-const SHIT = preload("res://Shit.tscn")
-const KURD = preload("res://Kurd.tscn")
+const ARROW = preload("res://bullets/Arrow.tscn")
+const BABY = preload("res://bullets/Baby.tscn")
+const CLOTH = preload("res://bullets/Cloth.tscn")
+const HEART = preload("res://bullets/Heart.tscn")
+const KURD = preload("res://bullets/Kurd.tscn")
+const SHOE = preload("res://bullets/Shoe.tscn")
+const SISHA = preload("res://bullets/Sisha.tscn")
+const STAR = preload("res://bullets/Star.tscn")
+const SUGAR = preload("res://bullets/Sugar.tscn")
+
+const FLOWER = preload("res://ground_blocks/Flower.tscn")
+const SHIT = preload("res://ground_blocks/Shit.tscn")
+const STONE = preload("res://ground_blocks/Stone.tscn")
+
+
 
 var rng = RandomNumberGenerator.new()
 var _timer = Timer.new()
@@ -24,27 +34,45 @@ func _set_timer():
 	_timer.start()
 	
 func _on_Timer_timeout():
-	var some_random = int(rng.randf_range(1, 7))
+	var some_random = int(rng.randf_range(1, 13))
 	var particul = null
 	match some_random:
 		1:
-			particul = SUGAR.instance()
+			particul = ARROW.instance()
 			particul.position = $Position2DHead.global_position
 		2:
-			particul = SISHA.instance()
-			particul.position = $Position2DHead.global_position
+			particul = BABY.instance()
+			particul.position = $Position2DAir.global_position
 		3:
-			particul = STONE.instance()
-			particul.position = $Position2DGround.global_position
+			particul = CLOTH.instance()
+			particul.position = $Position2DHead.global_position
 		4:
-			particul = SHIT.instance()
-			particul.position = $Position2DGround.global_position
+			particul = HEART.instance()
+			particul.position = $Position2DWomans.global_position
 		5:
 			particul = KURD.instance()
-			particul.position = $Position2DAir.global_position
-		6:
-			particul = KURD.instance()
 			particul.position = $Position2DAir2.global_position
+		6:
+			particul = SHOE.instance()
+			particul.position = $Position2DHead.global_position
+		7:
+			particul = SISHA.instance()
+			particul.position = $Position2DHead.global_position
+		8:
+			particul = STAR.instance()
+			particul.position = $Position2DAir2.global_position
+		9:
+			particul = SUGAR.instance()
+			particul.position = $Position2DHead.global_position
+		10:
+			particul = FLOWER.instance()
+			particul.position = $Position2DGround.global_position
+		11:
+			particul = SHIT.instance()
+			particul.position = $Position2DGround.global_position
+		12:
+			particul = STONE.instance()
+			particul.position = $Position2DGround.global_position
 	
 	get_parent().add_child(particul)
 	_set_timer()

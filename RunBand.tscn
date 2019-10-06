@@ -64,6 +64,9 @@ position = Vector2( 32.3824, -40.196 )
 [node name="Position2DGround" type="Position2D" parent="."]
 position = Vector2( 37.1219, 98.5351 )
 
+[node name="Position2DWomans" type="Position2D" parent="."]
+position = Vector2( -3.02857, 65.2564 )
+
 [node name="womans" type="KinematicBody2D" parent="."]
 editor/display_folded = true
 
@@ -71,7 +74,7 @@ editor/display_folded = true
 position = Vector2( -5.02255, 81.4114 )
 scale = Vector2( 0.0284764, 0.153867 )
 frames = SubResource( 2 )
-frame = 5
+frame = 1
 speed_scale = 0.2
 playing = true
 
