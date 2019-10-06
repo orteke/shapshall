@@ -50,6 +50,7 @@ shape = SubResource( 1 )
 position = Vector2( 161.12, 155.296 )
 scale = Vector2( 0.12646, 0.130708 )
 frames = SubResource( 2 )
+frame = 1
 speed_scale = 0.2
 playing = true
 
@@ -61,7 +62,7 @@ margin_bottom = 181.0
 position = Vector2( 162.881, 88.6427 )
 scale = Vector2( 0.346261, 0.290859 )
 frames = SubResource( 3 )
-frame = 3
+frame = 2
 speed_scale = 0.1
 playing = true
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

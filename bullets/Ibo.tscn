@@ -1,12 +1,12 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://bullets/Kurd.gd" type="Script" id=1]
-[ext_resource path="res://sprites/kurd.png" type="Texture" id=2]
+[ext_resource path="res://bullets/Ibo.gd" type="Script" id=1]
+[ext_resource path="res://sprites/ibo.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 3.13572, 5.70159 )
 
-[node name="kurd" type="Area2D"]
+[node name="ibo" type="Area2D"]
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]

@@ -4,7 +4,7 @@ const ARROW = preload("res://bullets/Arrow.tscn")
 const BABY = preload("res://bullets/Baby.tscn")
 const CLOTH = preload("res://bullets/Cloth.tscn")
 const HEART = preload("res://bullets/Heart.tscn")
-const KURD = preload("res://bullets/Kurd.tscn")
+const IBO = preload("res://bullets/Ibo.tscn")
 const SHOE = preload("res://bullets/Shoe.tscn")
 const SISHA = preload("res://bullets/Sisha.tscn")
 const STAR = preload("res://bullets/Star.tscn")
@@ -50,7 +50,7 @@ func _on_Timer_timeout():
 			particul = HEART.instance()
 			particul.position = $Position2DWomans.global_position
 		5:
-			particul = KURD.instance()
+			particul = IBO.instance()
 			particul.position = $Position2DAir2.global_position
 		6:
 			particul = SHOE.instance()
