@@ -74,7 +74,6 @@ editor/display_folded = true
 position = Vector2( -5.02255, 81.4114 )
 scale = Vector2( 0.0284764, 0.153867 )
 frames = SubResource( 2 )
-frame = 1
 speed_scale = 0.2
 playing = true
 
