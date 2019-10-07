@@ -80,7 +80,8 @@ func _on_Timer_timeout():
 func _on_RunBand_tree_exiting():
 	var root = get_tree().get_root()
 	for child in root.get_children():
-		if child.get_name() == "Node2D":
+		print(child.get_name())
+		if child.get_name() == "Node2D" || child.get_name() == "Kiss":
 			continue
 		child.queue_free()
 
@@ -88,9 +89,9 @@ func _on_RunBand_tree_exited():
 	queue_free()
 
 func _on_WomansArea2D_body_entered(body):
-	if body.get_name() != "Player" || body.get_name() == "womans":
+	if body.get_name() != "Player":
 		return
-		
+
 	queue_free()
 	var root = get_tree().get_root()
 	# Add the next level
