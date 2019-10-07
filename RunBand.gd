@@ -80,7 +80,6 @@ func _on_Timer_timeout():
 func _on_RunBand_tree_exiting():
 	var root = get_tree().get_root()
 	for child in root.get_children():
-		print(child.get_name())
 		if child.get_name() == "Node2D" || child.get_name() == "Kiss":
 			continue
 		child.queue_free()
