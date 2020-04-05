@@ -1,6 +1,6 @@
 extends Area2D
 
-const SPEED = 60
+const SPEED = 100
 
 const velocity = Vector2()
 

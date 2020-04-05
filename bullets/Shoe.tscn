@@ -4,7 +4,7 @@
 [ext_resource path="res://sprites/shoe.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 2.90773, 2.95258 )
+extents = Vector2( 2.90773, 1.11335 )
 
 [node name="shoe" type="Area2D"]
 script = ExtResource( 1 )
@@ -15,11 +15,11 @@ scale = Vector2( 0.0761841, 0.0813705 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.0484924, -0.484945 )
+position = Vector2( -0.0305062, -0.563944 )
 shape = SubResource( 1 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-position = Vector2( -0.0850388, -0.333313 )
-scale = Vector2( 0.294336, 0.286171 )
+position = Vector2( -0.0850387, -0.906051 )
+scale = Vector2( 0.294336, 0.145949 )
 [connection signal="body_entered" from="." to="." method="_on_shoe_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

@@ -4,7 +4,7 @@
 [ext_resource path="res://sprites/heart.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 2.24723, 2.46989 )
+extents = Vector2( 2.24723, 2.03567 )
 
 [node name="heart" type="Area2D"]
 script = ExtResource( 1 )
@@ -15,11 +15,11 @@ scale = Vector2( 0.0627477, 0.0556639 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.379047, -0.0442082 )
+position = Vector2( 0.27745, -0.111938 )
 shape = SubResource( 1 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-position = Vector2( 0.403292, -0.026559 )
-scale = Vector2( 0.236246, 0.251521 )
+position = Vector2( 0.26783, -0.111223 )
+scale = Vector2( 0.229473, 0.202416 )
 [connection signal="body_entered" from="." to="." method="_on_heart_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

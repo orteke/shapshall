@@ -4,21 +4,22 @@
 [ext_resource path="res://sprites/sugar.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 3.59533, 6.14653 )
+extents = Vector2( 2.82742, 2.74413 )
 
 [node name="sugar" type="Area2D"]
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.185052, 0.193394 )
+position = Vector2( 0.0197484, 0.0395007 )
+scale = Vector2( 0.106448, 0.112815 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.0484924, -0.484945 )
+position = Vector2( 0.238297, -0.190154 )
 shape = SubResource( 1 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-position = Vector2( 0.072741, -0.412203 )
-scale = Vector2( 0.357448, 0.609619 )
+position = Vector2( 0.0766354, 0.0800879 )
+scale = Vector2( 0.391886, 0.412122 )
 [connection signal="body_entered" from="." to="." method="_on_sugar_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

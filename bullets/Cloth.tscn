@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://bullets/Cloth.gd" type="Script" id=1]
-[ext_resource path="res://sprites/cloth.png" type="Texture" id=2]
+[ext_resource path="res://sprites/penty.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2.6853, 1.88293 )
@@ -15,11 +15,11 @@ scale = Vector2( 0.0751435, 0.0730179 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.153168, 0.352454 )
+position = Vector2( 0.2209, -0.0878002 )
 shape = SubResource( 1 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-position = Vector2( 0.177418, 0.372861 )
-scale = Vector2( 0.326046, 0.227556 )
+position = Vector2( 0.245148, -0.0165957 )
+scale = Vector2( 0.30234, 0.236022 )
 [connection signal="body_entered" from="." to="." method="_on_cloth_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

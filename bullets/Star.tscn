@@ -4,7 +4,7 @@
 [ext_resource path="res://sprites/star.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 3.16953, 3.0766 )
+extents = Vector2( 2.35621, 2.04466 )
 
 [node name="star" type="Area2D"]
 script = ExtResource( 1 )
@@ -15,11 +15,11 @@ scale = Vector2( 0.0693445, 0.0677655 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.548523, 0.578199 )
+position = Vector2( -0.88718, 0.679796 )
 shape = SubResource( 1 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-position = Vector2( -0.716123, 0.727362 )
-scale = Vector2( 0.302879, 0.287874 )
+position = Vector2( -0.919319, 0.608831 )
+scale = Vector2( 0.231761, 0.228609 )
 [connection signal="body_entered" from="." to="." method="_on_star_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

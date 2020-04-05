@@ -29,7 +29,7 @@ func _physics_process(delta):
 	pass
 	
 func _set_timer():
-	_timer.set_wait_time(rng.randf_range(1.5, 4))
+	_timer.set_wait_time(rng.randf_range(0.75, 1))
 	_timer.set_one_shot(true)
 	_timer.start()
 	
