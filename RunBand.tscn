@@ -1,101 +1,134 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://RunBand.gd" type="Script" id=1]
-[ext_resource path="res://sprites/ground.png" type="Texture" id=2]
-[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://animations/womans/womans-1.png" type="Texture" id=4]
-[ext_resource path="res://animations/womans/womans-2.png" type="Texture" id=5]
-[ext_resource path="res://animations/womans/womans-3.png" type="Texture" id=6]
-[ext_resource path="res://animations/womans/womans-4.png" type="Texture" id=7]
-[ext_resource path="res://animations/womans/womans-5.png" type="Texture" id=8]
-[ext_resource path="res://animations/womans/womans-6.png" type="Texture" id=9]
+[ext_resource path="res://images/ground.png" type="Texture" id=2]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://womans/Womans.tscn" type="PackedScene" id=4]
+[ext_resource path="res://score_result/ScoreResult.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ShadowsIntoLight-Regular.ttf" type="DynamicFontData" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 64.0843, 65.3352 )
+extents = Vector2( 50.441, 56.1716 )
 
-[sub_resource type="SpriteFrames" id=2]
-animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "default",
-"speed": 60.0
-} ]
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 2.42668, 21.5578 )
-
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 2.71807, 20.3944 )
-
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 0.527905, 4.38292 )
 
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 2.25049, 21.6714 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 4
+font_data = ExtResource( 6 )
+
 [node name="RunBand" type="Node2D"]
-position = Vector2( 59.0344, 54.9276 )
+position = Vector2( 61.1183, 64.4407 )
 scale = Vector2( 7.00253, 1.26228 )
 script = ExtResource( 1 )
 
 [node name="Ground" type="Sprite" parent="."]
-position = Vector2( 14.4954, 109.029 )
-scale = Vector2( 0.358039, 0.155264 )
+position = Vector2( 14.1675, 103.181 )
+scale = Vector2( 0.458655, 0.22119 )
 texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Ground"]
 position = Vector2( -7.04346, -6.28625 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/StaticBody2D"]
-position = Vector2( 7.07079, 7.71576 )
+position = Vector2( 7.51459, 10.9941 )
 shape = SubResource( 1 )
 
+[node name="jumpline" type="Sprite" parent="."]
+position = Vector2( 14.2114, 30.8633 )
+scale = Vector2( 0.462166, 0.00204618 )
+texture = ExtResource( 2 )
+
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 2.15573, 82.27 )
-scale = Vector2( 0.208322, 1.01452 )
+position = Vector2( 6.70953, 47.2085 )
+scale = Vector2( 0.151199, 0.634257 )
 
-[node name="Position2DHead" type="Position2D" parent="."]
-position = Vector2( 37.0676, 65.3435 )
+[node name="BottlePosition2D" type="Position2D" parent="."]
+position = Vector2( 35.9377, 44.884 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Position2DAir" type="Position2D" parent="."]
-position = Vector2( 16.0175, -40.3575 )
+[node name="MeteorPosition2D" type="Position2D" parent="."]
+position = Vector2( 36.4517, -11.5479 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Position2DAir2" type="Position2D" parent="."]
-position = Vector2( 32.3824, -40.196 )
+[node name="MeteorPosition2D_2" type="Position2D" parent="."]
+position = Vector2( 36.3338, -45.4151 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Position2DGround" type="Position2D" parent="."]
-position = Vector2( 37.1219, 98.5351 )
+[node name="MeteorPosition2D_3" type="Position2D" parent="."]
+position = Vector2( 19.3429, -47.1809 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Position2DWomans" type="Position2D" parent="."]
-position = Vector2( -3.02857, 65.2564 )
+[node name="FireHydrantPosition2D" type="Position2D" parent="."]
+position = Vector2( 36.6954, 73.5559 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="womans" type="KinematicBody2D" parent="."]
-
-[node name="WomansAnimatedSprite" type="AnimatedSprite" parent="womans"]
-position = Vector2( -5.02255, 81.4114 )
-scale = Vector2( 0.0284764, 0.153867 )
-frames = SubResource( 2 )
-speed_scale = 0.2
-playing = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="womans"]
-position = Vector2( -6.33592, 77.6596 )
-shape = SubResource( 3 )
-
-[node name="WomansArea2D" type="Area2D" parent="womans"]
-editor/display_folded = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="womans/WomansArea2D"]
-position = Vector2( -6.17959, 78.8912 )
-shape = SubResource( 4 )
+[node name="HeartPosition2D" type="Position2D" parent="."]
+position = Vector2( -2.97194, 45.4243 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="FrontBlock" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 36.694, 82.3495 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="FrontBlock"]
 position = Vector2( -0.291882, -0.462639 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FrontBlock/StaticBody2D"]
 position = Vector2( 0.250191, 0 )
-shape = SubResource( 5 )
+shape = SubResource( 2 )
+
+[node name="WomansArea2D" type="Area2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Womans" parent="WomansArea2D" instance=ExtResource( 4 )]
+position = Vector2( -4.67021, 69.2072 )
+scale = Vector2( 0.0279229, 0.143534 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WomansArea2D"]
+position = Vector2( -6.14491, 69.1521 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScoreControl" parent="CanvasLayer" instance=ExtResource( 5 )]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 301.444
+margin_top = 96.7359
+margin_right = 321.444
+margin_bottom = 104.736
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "JUMP LINE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="tree_exited" from="." to="." method="_on_RunBand_tree_exited"]
 [connection signal="tree_exiting" from="." to="." method="_on_RunBand_tree_exiting"]
-[connection signal="body_entered" from="womans/WomansArea2D" to="." method="_on_WomansArea2D_body_entered"]
+[connection signal="body_entered" from="WomansArea2D" to="." method="_womans_on_Area2D_body_entered"]

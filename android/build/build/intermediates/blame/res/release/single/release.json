@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi-v4_icon.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-xxxhdpi-v4\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable_notification_tile_bg.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout-v16_notification_template_custom_big.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\layout-v16\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi-v4_icon_background.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-xxxhdpi-v4\\icon_background.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi-v4_icon_foreground.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-xxxhdpi-v4\\icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout-v21_notification_action_tombstone.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi-v4_icon.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-xxhdpi-v4\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout-v21_notification_action.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi-v4_icon.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-xhdpi-v4\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable_notification_bg.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout_status_bar_ongoing_event_progress_bar.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\layout\\status_bar_ongoing_event_progress_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout_notification_action_tombstone.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi-v4_icon.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-mdpi-v4\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout_notification_template_part_chronometer.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\drawable-xxhdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap_icon_foreground.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap\\icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4_icon_foreground.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-hdpi-v4\\icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout_notification_template_icon_group.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap_icon.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout_browser_actions_context_menu_page.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\a5fa376b428f6da76067d7b8508b5b5f\\res\\layout\\browser_actions_context_menu_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout_notification_template_part_time.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi-v4_icon_foreground.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-xxhdpi-v4\\icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable_notification_bg_low.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap_icon_background.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap\\icon_background.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi-v4_icon_background.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-mdpi-v4\\icon_background.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi-v4_icon_background.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-xhdpi-v4\\icon_background.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout-v21_notification_template_icon_group.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout-v21_notification_template_custom_big.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi-v4_icon_foreground.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-xhdpi-v4\\icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable_notification_icon_background.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout_downloading_expansion.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\layout\\downloading_expansion.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout_notification_action.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-v21_notification_action_background.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi-v4_icon_foreground.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-mdpi-v4\\icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4_icon_background.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-hdpi-v4\\icon_background.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\layout_browser_actions_context_menu_row.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\a5fa376b428f6da76067d7b8508b5b5f\\res\\layout\\browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi-v4_icon_background.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-xxhdpi-v4\\icon_background.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-anydpi-v26_icon.xml.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-anydpi-v26\\icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi-v4_icon.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\mipmap-hdpi-v4\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\04ab379020e5654c18fa7621ceda09f9\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+    }
+]

@@ -1,0 +1,39 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://animations/idle/idle5.png" type="Texture" id=1]
+[ext_resource path="res://animations/idle/idle2.png" type="Texture" id=2]
+[ext_resource path="res://animations/idle/idle1.png" type="Texture" id=3]
+[ext_resource path="res://animations/idle/idle4.png" type="Texture" id=4]
+[ext_resource path="res://animations/idle/idle6.png" type="Texture" id=5]
+[ext_resource path="res://animations/idle/idle3.png" type="Texture" id=6]
+[ext_resource path="res://animations/wind/wind8.png" type="Texture" id=7]
+[ext_resource path="res://animations/wind/wind3.png" type="Texture" id=8]
+[ext_resource path="res://animations/wind/wind2.png" type="Texture" id=9]
+[ext_resource path="res://animations/wind/wind4.png" type="Texture" id=10]
+[ext_resource path="res://animations/wind/wind6.png" type="Texture" id=11]
+[ext_resource path="res://animations/wind/wind7.png" type="Texture" id=12]
+[ext_resource path="res://animations/wind/wind1.png" type="Texture" id=13]
+[ext_resource path="res://animations/wind/wind5.png" type="Texture" id=14]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 1 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "idle",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "wind",
+"speed": 12.0
+} ]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 62.2643, 75.7707 )
+scale = Vector2( 0.206424, 0.186524 )
+frames = SubResource( 1 )
+animation = "wind"
+frame = 7
+playing = true

@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://animations/heart/heart1.png" type="Texture" id=1]
+[ext_resource path="res://animations/heart/heart2.png" type="Texture" id=2]
+[ext_resource path="res://animations/heart/heart3.png" type="Texture" id=3]
+[ext_resource path="res://heart/Heart.gd" type="Script" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource( 4 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 6.93474, 8.04429 )
+scale = Vector2( 0.140093, 0.145641 )
+frames = SubResource( 1 )
+frame = 1
+playing = true
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="AnimatedSprite"]
+position = Vector2( 0.27462, 3.96239 )
+scale = Vector2( 3.55397, 3.29819 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 7.19802, 8.5451 )
+scale = Vector2( 0.262895, 0.289263 )
+polygon = PoolVector2Array( -8.81266, 8.83901, -9.12742, -6.22766, -2.30743, -10.042, 5.14209, -9.27914, 9.54885, -3.08082, 9.12916, 7.50398, 4.93225, 9.41116, 1.15502, 5.97825, -4.93051, 8.64829 )
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
+[connection signal="screen_exited" from="AnimatedSprite/VisibilityNotifier2D" to="AnimatedSprite" method="_on_VisibilityNotifier2D_screen_exited"]

@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://animations/fire_hydrant/fire_hydrant1.png" type="Texture" id=1]
+[ext_resource path="res://animations/fire_hydrant/fire_hydrant2.png" type="Texture" id=2]
+[ext_resource path="res://animations/fire_hydrant/fire_hydrant4.png" type="Texture" id=3]
+[ext_resource path="res://animations/fire_hydrant/fire_hydrant3.png" type="Texture" id=4]
+[ext_resource path="res://fire_hydrant/FireHydrant.gd" type="Script" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 9.74856, 13.9522 )
+scale = Vector2( 0.20944, 0.212214 )
+frames = SubResource( 1 )
+frame = 3
+playing = true
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="AnimatedSprite"]
+visible = false
+position = Vector2( -2.49197, 3.00595 )
+scale = Vector2( 3.07665, 4.47049 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+position = Vector2( 9.77322, 13.7031 )
+scale = Vector2( 0.994238, 1.00193 )
+polygon = PoolVector2Array( -1.84404, -8.41305, 0.473072, -8.41305, 3.3249, -4.52743, 4.03786, -3.13716, 3.96657, -0.499215, 5.24989, 0.463278, 5.24989, 2.28132, 2.86148, 4.24196, 2.79019, 6.91555, 3.50314, 7.87804, 3.53879, 8.98312, -4.87411, 9.01877, -4.90976, 6.98684, -4.30375, 3.88548, -5.19494, 3.529, -5.9792, 2.74474, -6.37132, 2.28132, -6.40697, 0.391982, -5.80096, 0.249391, -4.94541, -0.285328, -4.16115, -0.570511, -4.37504, -2.4955, -4.83846, -2.88762, -4.62458, -4.34919, -3.84032, -6.02464, -2.73524, -7.20102, -2.09358, -7.80703 )
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
+[connection signal="screen_exited" from="AnimatedSprite/VisibilityNotifier2D" to="AnimatedSprite" method="_on_VisibilityNotifier2D_screen_exited"]

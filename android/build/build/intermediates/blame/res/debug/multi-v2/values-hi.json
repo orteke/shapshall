@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\cemek\\wkspaces\\shapshall\\android\\build\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hi\\values-hi.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\fb711780d6565c5dc40c2356763efd20\\res\\values-hi\\values-hi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "989",
+                        "endColumns": "100",
+                        "endOffsets": "1085"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\f32c09cb010219d7e0daeebcddb44211\\res\\values-hi\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "199,269,395,464,532,609,703",
+                        "endColumns": "69,125,68,67,76,93,70",
+                        "endOffsets": "268,394,463,531,608,702,773"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "386,460,590,663,735,816,914",
+                        "endColumns": "73,129,72,71,80,97,74",
+                        "endOffsets": "455,585,658,730,811,909,984"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\12c6fee4736dde591b4748067e8ee8aa\\res\\values-hi\\values-hi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "75",
+                        "endOffsets": "126"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "310",
+                        "endColumns": "75",
+                        "endOffsets": "381"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\cemek\\.gradle\\caches\\transforms-2\\files-2.1\\ce77191bb3f5e2f83a0d587c022bf640\\res\\values-hi\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "204",
+                        "endOffsets": "451"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "204",
+                        "endOffsets": "305"
+                    }
+                }
+            ]
+        }
+    ]
+}

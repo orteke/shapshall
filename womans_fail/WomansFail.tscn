@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://womans/Womans.tscn" type="PackedScene" id=1]
+[ext_resource path="res://womans_fail/WomansFail.gd" type="Script" id=2]
+[ext_resource path="res://idle/Idle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ShadowsIntoLight-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://score_result/ScoreResult.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ads/Ads.tscn" type="PackedScene" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 11
+font_data = ExtResource( 4 )
+
+[node name="WomansFail" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" parent="." instance=ExtResource( 1 )]
+position = Vector2( 176.685, 118.22 )
+scale = Vector2( 0.26219, 0.244586 )
+frame = 4
+
+[node name="AnimatedSprite2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 52.9868, 63.9562 )
+scale = Vector2( 0.175692, 0.156661 )
+frame = 3
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 99.0
+margin_top = 14.0
+margin_right = 283.0
+margin_bottom = 53.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "the main idea of this game is why we should 
+ to stay away from women :("
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreControl" parent="." instance=ExtResource( 5 )]
+margin_left = 98.984
+margin_top = 59.8576
+margin_right = 138.984
+margin_bottom = 99.8576
+
+[node name="Ads" parent="." instance=ExtResource( 6 )]

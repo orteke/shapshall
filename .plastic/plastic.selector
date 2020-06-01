@@ -1,0 +1,4 @@
+repository "shapshall"
+  path "/"
+    smartbranch "/main" changeset "20"                                          
+     

@@ -1,0 +1,68 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://animations/fail/fail1.png" type="Texture" id=1]
+[ext_resource path="res://fail/Fail.gd" type="Script" id=2]
+[ext_resource path="res://animations/fail/fail2.png" type="Texture" id=3]
+[ext_resource path="res://animations/fail/fail3.png" type="Texture" id=4]
+[ext_resource path="res://animations/fail/fail4.png" type="Texture" id=5]
+[ext_resource path="res://ShadowsIntoLight-Regular.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://idle/Idle.tscn" type="PackedScene" id=7]
+[ext_resource path="res://score_result/ScoreResult.tscn" type="PackedScene" id=8]
+[ext_resource path="res://ads/Ads.tscn" type="PackedScene" id=9]
+[ext_resource path="res://sounds/main.ogg" type="AudioStream" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 6 )
+
+[node name="Fail" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 202.224, 89.249 )
+scale = Vector2( 0.391385, 0.354819 )
+frames = SubResource( 1 )
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 123.999
+margin_top = 0.00274658
+margin_right = 295.999
+margin_bottom = 55.0027
+rect_scale = Vector2( 0.99056, 0.974155 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Next time be careful 
+with your head ;)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 51.9542, 49.5569 )
+scale = Vector2( 0.132196, 0.123792 )
+frame = 1
+
+[node name="ScoreControl" parent="." instance=ExtResource( 8 )]
+margin_left = 123.92
+margin_top = 56.3273
+margin_right = 163.92
+margin_bottom = 96.3273
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
+
+[node name="Ads" parent="." instance=ExtResource( 9 )]

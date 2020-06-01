@@ -1,3 +1,3 @@
-![screenshot](https://raw.githubusercontent.com/orteke/shapshall/develop/marketing.gif "Screenshot")
+![screenshot](https://raw.githubusercontent.com/orteke/shapshall/develop/marketing.png "Screenshot")
 
 shapshall

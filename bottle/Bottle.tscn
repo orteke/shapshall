@@ -1,0 +1,38 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://animations/bottle/bottle2.png" type="Texture" id=1]
+[ext_resource path="res://animations/bottle/bottle3.png" type="Texture" id=2]
+[ext_resource path="res://animations/bottle/bottle1.png" type="Texture" id=3]
+[ext_resource path="res://animations/bottle/bottle4.png" type="Texture" id=4]
+[ext_resource path="res://bottle/Bottle.gd" type="Script" id=5]
+[ext_resource path="res://bottle/AnimatedSprite.gd" type="Script" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 8.16911, 9.35497 )
+scale = Vector2( 0.172547, 0.180453 )
+frames = SubResource( 1 )
+frame = 3
+playing = true
+script = ExtResource( 6 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="AnimatedSprite"]
+position = Vector2( 1.00822, 3.21365 )
+scale = Vector2( 3.6551, 4.14937 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 7.7708, 9.62651 )
+scale = Vector2( 0.604123, 0.686762 )
+polygon = PoolVector2Array( -3.5635, -4.04279, -2.14694, -4.57684, 1.39449, -1.15003, 4.27821, 0.0960817, 6.60544, 2.85533, 8.12319, 6.68267, 6.70662, 8.95237, 5.18887, 9.21939, 1.9004, 7.79527, -0.275042, 4.8135, -1.08451, 1.34219, -2.45049, -1.63957, -3.5635, -3.0637 )
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
+[connection signal="screen_exited" from="AnimatedSprite/VisibilityNotifier2D" to="AnimatedSprite" method="_on_VisibilityNotifier2D_screen_exited"]

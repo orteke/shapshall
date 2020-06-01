@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://admob-lib/admob.gd" type="Script" id=1]
+[ext_resource path="res://ads/Ads.gd" type="Script" id=2]
+
+[node name="Ads" type="Node"]
+script = ExtResource( 2 )
+
+[node name="Admob" type="Node" parent="."]
+script = ExtResource( 1 )
+is_real = true
+banner_on_top = false
+banner_id = "ca-app-pub-4989305548479832/6886633203"
+[connection signal="tree_exited" from="." to="." method="_on_Ads_tree_exited"]
